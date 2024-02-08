@@ -1,8 +1,12 @@
 package com.example.techpointcompose
 
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -26,17 +30,25 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.core.os.LocaleListCompat
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import coil.ImageLoader
+import kotlinx.coroutines.Dispatchers
+import java.util.*
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             TechPointComposeTheme {
                 // A surface container using the 'background' color from the theme
@@ -115,7 +127,7 @@ fun RowScope.AddItem(
         modifier = Modifier
             .height(40.dp)
             .clip(CircleShape)
-            .background(background)
+            .background(Color.Blue)
             .clickable(onClick = {
                 navController.navigate(screen.route) {
                     popUpTo(navController.graph.findStartDestination().id)
@@ -136,7 +148,7 @@ fun RowScope.AddItem(
             )
             AnimatedVisibility(visible = selected) {
                 Text(
-                    text = screen.title,
+                    text = stringResource(id = R.string.Kazakh),
                     color = contentColor
                 )
             }
@@ -149,3 +161,6 @@ fun RowScope.AddItem(
 fun BottomNavPreview() {
     BottomNav()
 }
+
+
+

@@ -7,4 +7,5 @@ data class Course (
     val rating: Float,
     val imageUrl: String,
     val price: Float,
+    val category: String,
 )

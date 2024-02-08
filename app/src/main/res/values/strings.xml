@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">TechPointCompose</string>
+    <string name="home">Home</string>
+    <string name="library">Library</string>
+    <string name="classroom">Classroom</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="categories">Categories</string>
+    <string name="Kazakh">Kazakh</string>
+    <string name="Russian">Russian</string>
+    <string name="English">English</string>
 </resources>

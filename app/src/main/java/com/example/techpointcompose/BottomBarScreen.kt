@@ -1,5 +1,7 @@
 package com.example.techpointcompose
 
+import androidx.compose.ui.res.stringResource
+
 
 sealed class BottomBarScreen(
     val route: String,
@@ -30,6 +32,7 @@ sealed class BottomBarScreen(
         title = "Notification",
         icon = R.drawable.round_home_24,
         icon_focused = R.drawable.outline_home_24
+
     )
 
     // for classroom

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TechPointCompose</string>
+    <string name="home">Үй</string>
+    <string name="library">Кітапхана</string>
+    <string name="classroom">Сабақтар</string>
+    <string name="notifications">Хабарландырулар</string>
+    <string name="profile">Профиль</string>
+    <string name="categories">Категориялар</string>
+    <string name="Kazakh">Қазақша</string>
+    <string name="Russian">Орысша</string>
+    <string name="English">Ағылшынша</string>
+</resources>

@@ -10,7 +10,8 @@ object CourseDataProvider {
         description = "",
         rating = 4.36F,
         imageUrl = exCoursePic,
-        price = 13.99F
+        price = 13.99F,
+        category = "Школьные предметы"
     )
 
     val courseList = listOf(course,
@@ -20,7 +21,8 @@ object CourseDataProvider {
             description = "Hello",
             rating = 4.00F,
             imageUrl = exCoursePic,
-            price = 13.99F
+            price = 13.99F,
+            category = "Школьные предметы"
         ),
         Course(
             id = 3,
@@ -28,7 +30,8 @@ object CourseDataProvider {
             description = "hellooooooo",
             rating = 3.56F,
             imageUrl = exCoursePic,
-            price = 13.99F
+            price = 13.99F,
+            category = "Школьные предметы"
         ),
         Course(
             id = 4,
@@ -36,7 +39,8 @@ object CourseDataProvider {
             description = "is that friend?",
             rating = 5.00F,
             imageUrl = exCoursePic,
-            price = 13.99F
+            price = 13.99F,
+            category = "Школьные предметы"
         ),
         Course(
             id = 5,
@@ -44,7 +48,8 @@ object CourseDataProvider {
             description = "или может забить на все",
             rating = 1.00F,
             imageUrl = exCoursePic,
-            price = 13.99F
+            price = 13.99F,
+            category = "Школьные предметы"
         ),
         Course(
             id = 6,
@@ -52,7 +57,8 @@ object CourseDataProvider {
             description = "Сгилш э заебал",
             rating = 5.00F,
             imageUrl = exCoursePic,
-            price = 13.99F
+            price = 13.99F,
+            category = "Школьные предметы"
         ),
 
     )
